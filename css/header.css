@@ -17,17 +17,26 @@ body {
     padding: 4rem ;
     background: #28262C;
     background: linear-gradient(169deg, rgba(40,38,44,1) 0%, rgba(40,38,44,0.927608543417367) 63%, rgba(0,212,255,0) 94%);
-    height: 70vh;
+    height: 800px;
     border-bottom-right-radius: 130px;
 }
 
 .nav-list {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: flex-start; 
     gap: 2rem;
 }
 
+.nav-svg {
+    height: 36px;
+    width: 36px;
+    margin-right: 1rem;
+}
+
 .nav-link {
+    display: flex;
+    align-items: center;    
     position: relative;
     text-decoration: none;
     color: #C5D9E2;

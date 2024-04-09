@@ -6,18 +6,25 @@
     border: solid 2px #28262C55;
     background-color: #28262C55;
     margin: .5rem 5rem;
+    text-decoration: none;
 }
 
 
 .product:hover {
-    border: solid 2px #28262C;
+    border: solid 2px #C5D9E2;
+    transition: 1s;
 } 
+
+.product:active {
+    background-color: #28262C;
+    transition: 1s;
+}
 
 .product-img {
     width: 500px;
     height: 300px;
     border-radius: 2rem;
-    transform: scale(1.0125);
+    transform: scale(1.013);
 }
 
 .product-desc {
@@ -42,4 +49,34 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 3rem;
+}
+
+.product:nth-child(1)  {
+    position: relative;
+}
+
+.product:nth-child(1):after {
+    position: absolute;
+    content: 'Impulsionado';
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: #28262C;
+    background-color: #C5D9E2;
+    border: solid 1px #28262C;
+    border-radius: 5px;
+    top: 20px;
+    left: 20px;
+}
+
+.product-price {
+    position: relative;
+}
+
+.product:first-of-type .product-price::after {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    content: "R$ 120.00";
+    text-decoration: line-through;
+    font-size: 1rem;
 }
